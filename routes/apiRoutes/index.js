@@ -3,6 +3,7 @@ const router = express.Router();
 const db = require('../../db/connection');
 router.use(require('./voterRoutes'));
 router.use(require('./candidateRoutes'));
+router.use(require('./voteRoutes'));
 
 // Get all parties
 router.get('/parties', (req, res) => {
